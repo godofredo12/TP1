@@ -1,0 +1,52 @@
+/*----------------------------------------------------------------*/
+/* Hoja de estilos                                                */
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/* Definimos el contenedor grid                                   */
+/*----------------------------------------------------------------*/
+.container {
+    display: grid;
+
+    /* Uso un atajo para definir 3 filas y dos columnas */
+    grid-template: 100px 1fr 60px / 29% 69%;
+
+    /* Distribuimos el contenido en cada fila */
+    grid-template-areas: "header header" "izq contenido" "pie pie";
+
+    /* separamos los items con gap */
+    gap: 10px;
+
+    /* Hacemos que el diseño ocupe casi el alto total del navegador */
+   
+}
+
+
+/*----------------------------------------------------------------*/
+/* Defino el nombre y color de cada area del grid                 */
+/*----------------------------------------------------------------*/
+.header    { grid-area: header;   }
+.izq       { grid-area: izq;      }
+.contenido { grid-area: contenido;}
+.pie       { grid-area: pie;      }
+
+
+/*----------------------------------------------------------------*/
+/* Definimos la apariencia de cada item del grid                  */
+/*----------------------------------------------------------------*/
+.item {
+    background-color: darkseagreen;
+    padding: 10px;
+    color: darkgreen;
+    border-radius: 10px;
+}
+
+
+/*----------------------------------------------------------------*/
+/* Imagen con bordes redondeados, con limites de tamaño           */
+/*----------------------------------------------------------------*/
+img {
+    border-radius: 50%;
+    width: 200px;
+    height:200px;
+  }

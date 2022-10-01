@@ -1,0 +1,81 @@
+.container {
+    display: grid;
+
+    grid-template:  100px 1fr 60px / 60% 38%;
+
+    grid-template-areas: "header header" 
+    "contenido izq" 
+    "pie pie";
+    gap: 10px;
+    background-image: url(fondo.jpg);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    
+}
+
+.header    { grid-area: header;   }
+.izq       { grid-area: izq;      }
+.contenido { grid-area: contenido;}
+.pie       { grid-area: pie;      }
+
+.item {
+    
+    padding: 10px;
+    color: rgb(3, 65, 3);
+    border-radius: 10px;
+    background-color: rgba(165, 199, 215, 0.7); 
+    
+        
+    
+}
+
+.header{
+    text-align: center;
+}
+
+img {
+    border-radius: 10%;
+    width: auto;
+    height:200px;
+  }
+
+  .slider-frame{
+    width: auto;
+    height: auto;   
+    margin: 50px auto 0;
+    overflow: hidden;
+    
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+    border: 1px solid black ;
+}
+
+@keyframes slide{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+   
+}
