@@ -1,7 +1,21 @@
+body {
+    background-image: url(fondoformulario.jpg);
+    background-size: 1600px;
+    
+}
+
+
+.encabezado {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
 .formulario {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
 }
 
 .formulario__label {
@@ -108,7 +122,7 @@
 
 .formulario__mensaje-exito {
     font-size: 14px;
-    color: greenyellow;
+    color: rgb(44, 196, 27);
     display: none;
 }
 
@@ -119,7 +133,7 @@
 /*Estilos de validacion*/
 
 .formulario__grupo-correcto .formulario__validacion-estado {
-    color: greenyellow;
+    color: rgb(44, 196, 27);
     opacity: 1;
 }
 
