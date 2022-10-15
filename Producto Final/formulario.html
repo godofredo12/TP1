@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de consultas</title>
+    <link rel="stylesheet" href="../css/estilosformulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Falta en formulario: 
+    - Mensaje de error cuando no se aceptan TyC (Sale que esta incompleto, deberia tener uno que diga que falta eso en especifico)
+    - En confirmar contraseña aparece una X en lugar del tilde
+    - Darle el mismo estilo al nav que en el index
+    - Darle estilo al mensaje 
+    - Si cometes un error y luego completas el formulario, el mensaje de error no se reincia, sigue quedando en pantalla
+    - Opcional: Cuando da el mensaje de error porque falta algun campo indicar cual falta (si sobra tiempo ja) -->
+    
+    <nav class="nav">
+        <a href="./paginas/formulario.html" class="nav__items nav__items--cta">Contactanos</a>
+        <a href="" class="nav__items nav__items--cta">Artistas</a>
+        <a href="" class="nav__items nav__items--cta">Museos</a>
+        <a href="../index.html" class="nav__items nav__items--cta">Inicio</a>
+    </nav>
+    <div class="encabezado">
+        <br>
+        <br>
+        <h2> Completa tus datos y mantente al tanto de nuestras novedades</h2>
+        <br>
+        <br>
+    </div>
+    <form action="" class="formulario" id="formulario">
+        <!-- Grupo usuario -->
+        <div class="formulario__grupo" id="grupo__usuario">
+            <label for="usuario" class="formulario__label">Usuario</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Artista123">
+                <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">Por favor, ingrese un usuario de 4 a 16 dígitos.</p>
+        </div>
+
+        <!-- Grupo nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombre completo</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ariel Palazzesi">
+                <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">Por favor, ingrese su nombre</p>
+        </div>
+
+        <!-- Grupo contraseña -->
+        <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password">
+                <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">La contraseña debe contener de 4 a 12 dígitos.</p>
+        </div>
+
+        <!-- Grupo contraseña2 -->
+        <div class="formulario__grupo" id="grupo__password2">
+            <label for="password2" class="formulario__label">Repetir contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2">
+                <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">Las contraseñas no coinciden.</p>
+        </div>
+
+        <!-- Grupo mail -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo electrónico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">Por favor, ingrese un correo válido.</p>
+        </div>
+
+        <!-- Grupo confirmar mail -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo2" class="formulario__label">Repetir correo electrónico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo2" placeholder="correo@correo.com">
+                <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">Por favor, ingrese un correo válido.</p>
+        </div>
+
+        <!-- Grupo teléfono -->
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="3412555555">
+                <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">Ingrese su teléfono con código de área. </p>
+        </div>
+
+        <!-- Grupo términos y condiciones -->
+        <div class="formulario__grupo" id="grupo__terminos"></div>
+        <label class="formulario__label">
+            <input class="formulario__checkbox"  type="checkbox" name="terminos" id="terminos">Acepto los Términos y Condiciones
+        </label>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+        <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error: Por favor, complete todos los campos.</b></p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se ha enviado correctamente.</p>
+        </div>
+    </form>
+    <script src="../js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/d365b7baca.js" crossorigin="anonymous"></script>
+</body>
+</html>
