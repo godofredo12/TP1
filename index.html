@@ -1,167 +1,211 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/normalize.css">
-    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
     <title>Pagina principal</title>
 </head>
 <body>
+   
     <header class="top">
     <!--Contenedor para el menu de navegacion-->
         <div class="container">
             <nav class="nav">
-                <a href="./paginas/formulario.html" class="nav__items nav__items--cta">Contactanos</a> <!-- Este icono es diferente porque es el que lleva al formulario, le agregue el cta a la class que significa 'call to action'-->
-                <a href="" class="nav__items">Artistas</a>
-                <a href="" class="nav__items">Museos</a>
-                <a href="#" class="nav__items">Inicio</a>
+                <a href="" class="nav__items nav__items--cta">Contactanos</a> 
+                <a href="" class="nav__items nav__items--cta">Artistas</a>
+                <a href="" class="nav__items nav__items--cta">Museos</a>
             </nav>
-            <!--Contendor para el texto-->       
+    <!--Contendor para el texto-->       
             <section class="top__container">
-                <div class="top__textos">
-                    <h1 class="top__titulo">Nuevo Museo Internacional</h1>
-                    <h2 class="top__subtitulo">El museo mas exclusivo del mundo.</h2>
+               <div class="top__textos slide__textos">
+                    <div class="top__titulos">
+                        <ul class="ul-titulos">
+                            <li class="li-titulos">Nuevo Museo Internacional</li>
+                            <li class="li-titulos">New International Museum</li>
+                            <li class="li-titulos">Neues Internationales Museum</li>
+                        </ul>
+                    </div>
+                    <div class="top__subtitulo">
+                        <ul class="ul-subtitulos">
+                            <li class="li-subtitulos">El museo mas exclusivo del mundo</li>
+                            <li class="li-subtitulos">The most exclusive museum in the world.</li>
+                            <li class="li-subtitulos">Das exklusivste Museum der Welt.</li>
+                        </ul>
+                    </div>
                     <a href="" class="top__cta">¡Suscribite!</a>
-                </div>
+               </div>
             </section>
         </div>
-        <!--wave para estetizar el scroll del banner principal-->
+          <!--wave para estetizar el scroll del banner principal-->
         <div class="top__wave" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
     </header>
-    <!--Zona principal de la pagina-->
-    <main>
-        <!--Logo del sitio junto con pequeña presentacion-->
-        <section class="presentacion container">
-            <img src="assets/Diseño sin título.png"alt="" class="presentacion__logo">
-            <h2 class="subtitulo">Un nuevo concepto de arte.</h2>
-            <p class="presentacion__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, expedita nostrum! Inventore accusamus libero repudiandae repellat, vitae non quae unde?</p>
-            <a href="" class="presentacion__ctn">¡Hace tu reserva!</a>  
-        </section>
-        <!--Bloques de texto con imagenes al costado copletando el widht de la pagina-->
-        <section class="acerca container">
-            <div class="acerca__text">
-                <h2 class="subtitulo">¿Quienes somos?</h2>
-                <p class="acerca__parraro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, atque! Alias maiores, unde ad, minus fuga nisi tempore omnis, placeat iusto quas adipisci asperiores voluptatibus necessitatibus dolores laudantium deleniti suscipit?</p>
-                <p class="acerca__parraro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, atque! Alias maiores, unde ad, minus fuga nisi tempore omnis, placeat iusto quas adipisci asperiores voluptatibus necessitatibus dolores laudantium deleniti suscipit?</p>
-            </div>
-            <!--imagen de la derecha-->
-            <figure class="acerca__img">
-                <img src="assets/Quienes-somos.png" alt="" class="acerca__foto"> <!--cambiar imagen!!!-->
-            </figure>
-            <!--Imagen de la izquierda-->
-            <figure class="acerca__img acerca__img--left">
-                <img src="assets/Ubicacion.png" alt="" class="acerca__foto"> <!--cambiar imagen!!!-->
-            </figure>
-            <div class="acerca__text">
-                <h2 class="subtitulo">¿Donde estamos?</h2>
-                <p class="acerca__parraro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, atque! Alias maiores, unde ad, minus fuga nisi tempore omnis, placeat iusto quas adipisci asperiores voluptatibus necessitatibus dolores laudantium deleniti suscipit?</p>
-                <p class="acerca__parraro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, atque! Alias maiores, unde ad, minus fuga nisi tempore omnis, placeat iusto quas adipisci asperiores voluptatibus necessitatibus dolores laudantium deleniti suscipit?</p>
-            </div>
-        </section>
-        <!--Nueva seccion con obras mas destacadas-->
-        <section class="obras">
-            <div class="container">
-                <h2 class="subtitulo">Obras reconocidas</h2> 
-                <div class="obras__grid"> 
-                    <!--Cuadricula en grid-->
-                    <!--foto1-->
-                    <article class="obras__item"> 
-                        <img src="assets/pexels-zaksheuskaya-1546249.jpg" alt="" class="obras__img">
-                        <div class="obras__hover">
-                            <h2 class="obras__titulo">Obra titulo</h2>
-                            <i class="far fa-file-alt obras__icon"></i>
-                        </div>   
-                    </article>
-                    <!--foto2-->
-                    <article class="obras__item"> 
-                        <img src="assets/pexels-steve-johnson-1548110 (1).jpg" alt="" class="obras__img">
-                        <div class="obras__hover">
-                            <h2 class="obras__titulo">Obra titulo</h2>
-                            <i class="far fa-file-alt obras__icon"></i>
-                        </div>   
-                    </article>
-                    <!--foto3-->
-                    <article class="obras__item"> 
-                        <img src="assets/pexels-ann-h-3095769.jpg" alt="" class="obras__img">
-                        <div class="obras__hover">
-                            <h2 class="obras__titulo">Obra titulo</h2>
-                            <i class="far fa-file-alt obras__icon"></i>
-                        </div>   
-                    </article>
-                    <!--foto4-->
-                    <article class="obras__item"> 
-                        <img src="assets/pexels-anni-roenkae-2983141.jpg" alt="" class="obras__img">
-                        <div class="obras__hover">
-                            <h2 class="obras-__titulo">Obra titulo</h2>
-                            <i class="far fa-file-alt obras__icon"></i>
-                        </div>   
-                    </article>
-                    <!--foto5-->
-                    <article class="obras__item"> 
-                        <img src="assets/Obra1.jpeg" alt="" class="obras__img">
-                        <div class="obras__hover">
-                            <h2 class="obras__titulo">Obra titulo</h2>
-                            <i class="far fa-file-alt obras__icon"></i>
-                        </div>   
-                    </article>    
-                </div>   
-            </div>
-        </section>
-        <!-- Seccion de comentarios -->
-        <section class="comentarios container">
-            <h2 class="subtitulo">¿Que dicen de nosotros?</h2>
-            <div class="comentarios__grid">
-                <!--Comentario1-->
-                <article class="comentarios__item">
-                    <div class="comentarios__persona">
-                        <img src="assets/Hombre.jpeg" alt="" class="comentarios__img">
-                        <div class="comentarios__txt">
-                            <h3 class="comentarios__nombre">Juan Pérez</h3>
-                            <p class="comentarios__pais">Málaga, España</p>
-                        </div>
-                    </div>
-                <p class="comentarios__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis, ad ab id facilis ut minus vel. In, esse. Enim!</p>
-                </article>
-                <!--Comentario2-->
-                <article class="comentarios__item">
-                    <div class="comentarios__persona">
-                        <img src="assets/Hombre.jpeg" alt="" class="comentarios__img">
-                        <div class="comentarios__txt">
-                            <h3 class="comentarios__nombre">Juan Pérez</h3>
-                            <p class="comentarios__pais">Málaga, España</p>
-                        </div>
-                    </div>
-                    <p class="comentarios__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis, ad ab id facilis ut minus vel. In, esse. Enim!</p>
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container footer-grid">
-            <nav class="nav nav--footer">
-                <a href="nav-items nav-items--footer">Inicio</a> 
-                <a href="nav-items nav-items--footer">Sobre nosotros</a> 
-                <a href="nav-items nav-items--footer">Donde estamos</a> 
-                <a href="nav-items nav-items--footer">Obras</a> 
-            </nav>
-            <section class="footer__contacto">
-                <h3 class="footer__titulo">Contactame</h3>
-                <div class="footer__icon">
-                    <span class="footer-container-icons">
-                        <a class="fa-brands fa-facebook" href="#"></a>
-                    </span>
-                    <span class="footer-container-icons">
-                        <a class="fa-brands fa-twitter" href=""></a>  
-                    </span>
-                    <span class="footer-container-icons">
-                        <a class="fa-brands fa-whatsapp" href="#"></a>
-                    </span>    
+    
+   
+
+
+
+<!--Zona principal de la pagina-->
+        <main>
+            <!--Logo del sitio junto con pequeña presentacion-->
+            <section class="presentacion container">
+                <img src="assets/NMI.png"alt="" class="presentacion__logo">
+                <h2 class="subtitulo">Un nuevo concepto de arte.</h2>
+                <p class="presentacion__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, expedita nostrum! Inventore accusamus libero repudiandae repellat, vitae non quae unde?</p>
+                <a href="" class="presentacion__ctn">¡Hace tu reserva!</a>  
+            </section>
+            <!--Bloques de texto con imagenes al costado copletando el widht de la pagina-->
+            <section class="acerca container">
+
+                <div class="acerca__text">
+                    <h2 class="subtitulo">¿Quienes somos?</h2>
+                    <p class="acerca__parraro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, atque! Alias maiores, unde ad, minus fuga nisi tempore omnis, placeat iusto quas adipisci asperiores voluptatibus necessitatibus dolores laudantium deleniti suscipit?</p>
+                    <p class="acerca__parraro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, atque! Alias maiores, unde ad, minus fuga nisi tempore omnis, placeat iusto quas adipisci asperiores voluptatibus necessitatibus dolores laudantium deleniti suscipit?</p>
+                </div>
+
+                <!--imagen de la derecha-->
+                <figure class="acerca__img">
+                    <img src="assets/Quienes-somos.png" alt="" class="acerca__foto"> <!--cambiar imagen!!!-->
+                </figure>
+                <!--Imagen de la izquierda-->
+                <figure class="acerca__img acerca__img--left">
+                    <img src="assets/Ubicacion.png" alt="" class="acerca__foto"> <!--cambiar imagen!!!-->
+                </figure>
+
+                <div class="acerca__text">
+                    <h2 class="subtitulo">¿Donde estamos?</h2>
+                    <p class="acerca__parraro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, atque! Alias maiores, unde ad, minus fuga nisi tempore omnis, placeat iusto quas adipisci asperiores voluptatibus necessitatibus dolores laudantium deleniti suscipit?</p>
+                    <p class="acerca__parraro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, atque! Alias maiores, unde ad, minus fuga nisi tempore omnis, placeat iusto quas adipisci asperiores voluptatibus necessitatibus dolores laudantium deleniti suscipit?</p>
+                </div>
+            
+            </section>
+<!--Nueva seccion con obras mas destacadas-->
+            <section class="obras">
+                <div class="container">
+                    <h2 class="subtitulo">Obras reconocidas</h2> 
+                    <div class="obras__grid"> 
+                        <!--Cuadricula en grid-->
+                        <!--foto1-->
+                        <article class="obras__item"> 
+                            <img src="assets/pexels-zaksheuskaya-1546249.jpg" alt="" class="obras__img">
+                         <div class="obras__hover">
+                             <h2 class="obras__titulo">Obra titulo</h2>
+                             <i class="far fa-file-alt obras__icon"></i>
+                         </div>   
+                        </article>
+                        <!--foto2-->
+                        <article class="obras__item"> 
+                            <img src="assets/pexels-steve-johnson-1548110 (1).jpg" alt="" class="obras__img">
+                         <div class="obras__hover">
+                             <h2 class="obras__titulo">Obra titulo</h2>
+                             <i class="far fa-file-alt obras__icon"></i>
+                         </div>   
+                        </article>
+                        <!--foto3-->
+                        <article class="obras__item"> 
+                            <img src="assets/pexels-ann-h-3095769.jpg" alt="" class="obras__img">
+                         <div class="obras__hover">
+                             <h2 class="obras__titulo">Obra titulo</h2>
+                             <i class="far fa-file-alt obras__icon"></i>
+                         </div>   
+                        </article>
+                        <!--foto4-->
+                        <article class="obras__item"> 
+                            <img src="assets/pexels-anni-roenkae-2983141.jpg" alt="" class="obras__img">
+                         <div class="obras__hover">
+                             <h2 class="obras-__titulo">Obra titulo</h2>
+                             <i class="far fa-file-alt obras__icon"></i>
+                         </div>   
+                        </article>
+                        <!--foto5-->
+                        <article class="obras__item"> 
+                            <img src="assets/Obra1.jpeg" alt="" class="obras__img">
+                         <div class="obras__hover">
+                             <h2 class="obras__titulo">Obra titulo</h2>
+                             <i class="far fa-file-alt obras__icon"></i>
+                         </div>   
+                        </article>
+                        
+                    </div>   
                 </div>
             </section>
-        </div>
-    </footer>
+            <!-- Seccion de comentarios -->
+            <section class="comentarios container">
+                <h2 class="subtitulo">¿Que dicen de nosotros?</h2>
+
+                <div class="comentarios__grid">
+                    <!--Comentario1-->
+                    <article class="comentarios__item">
+                    <div class="comentarios__persona">
+                        <img src="assets/Hombre.jpeg" alt="" class="comentarios__img">
+                        <div class="comentarios__txt">
+                            <h3 class="comentarios__nombre">Juan Pérez</h3>
+                            <p class="comentarios__pais">Málaga, España</p>
+
+                        </div>
+                    </div>
+
+                    <p class="comentarios__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis, ad ab id facilis ut minus vel. In, esse. Enim!</p>
+                    </article>
+                    <!--Comentario2-->
+                    <article class="comentarios__item">
+                        <div class="comentarios__persona">
+                            <img src="assets/Hombre.jpeg" alt="" class="comentarios__img">
+                            <div class="comentarios__txt">
+                                <h3 class="comentarios__nombre">Juan Pérez</h3>
+                                <p class="comentarios__pais">Málaga, España</p>
+    
+                            </div>
+                        </div>
+    
+                        <p class="comentarios__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis, ad ab id facilis ut minus vel. In, esse. Enim!</p>
+                        </article>
+                </div>
+            </section>
+
+
+           
+        </main>
+
+       
+
+        <footer class="footer">
+            <div class="footer__wave" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+            <div class="container footer__grid">
+                <nav class="nav nav__footer">
+                   <a class="nav__items nav__items--footer" href="">Inicio</a> 
+                   <a class="nav__items nav__items--footer" href="">Sobre nosotros</a> 
+                   <a class="nav__items nav__items--footer" href="">Donde estamos</a> 
+                   <a class="nav__items nav__items--footer" href="">Obras</a> 
+                </nav>
+
+                <section class="footer__contacto">
+                    <h3 class="footer__titulo">Nuestras redes</h3>
+                    <div class="footer__icons">
+                        <span class="footer__container-icons">
+                            <a class="fa-brands fa-facebook footer__icon" href="#"></a>
+                        </span>
+                        <span class="footer__container-icons">
+                            <a class="fa-brands fa-twitter footer__icon" href=""></a>  
+                        </span>
+                        <span class="footer__container-icons">
+                            <a class="fa-brands fa-whatsapp footer__icon" href="#"></a>
+                        </span>
+                        
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+    
+   
+   
+    
+
+
     <script src="https://kit.fontawesome.com/ac5a02070b.js" crossorigin="anonymous"></script>
 </body>
 </html>
