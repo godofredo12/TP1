@@ -10,16 +10,18 @@
     <title>Pagina principal</title>
 </head>
 <body>
+
     <!--Falta en Index:
     -   Mejorar estilos en la zona de presentacion (Cambiar imagenes, colocar los textos, etc)
     -   En la seccion obras ambiar imagenes x obras reales y agregar la descripcion
     -   En la seccion comentarios cambiar las imagenes y modificar los textos
     --->
+   
     <header class="top">
     <!--Contenedor para el menu de navegacion-->
         <div class="container">
             <nav class="nav">
-                <a href="" class="nav__items nav__items--cta">Contactanos</a> 
+                <a href="formulario.html" class="nav__items nav__items--cta">Exposiciones</a> 
                 <a href="" class="nav__items nav__items--cta">Artistas</a>
                 <a href="" class="nav__items nav__items--cta">Museos</a>
             </nav>
@@ -40,7 +42,7 @@
                             <li class="li-subtitulos">Das exklusivste Museum der Welt.</li>
                         </ul>
                     </div>
-                    <a href="" class="top__cta">¡Suscribite!</a>
+                    <a href="/formulario.html" class="top__cta">¡Suscribite!</a>
                </div>
             </section>
         </div>
@@ -54,16 +56,46 @@
 
 <!--Zona principal de la pagina-->
         <main>
-            <!--Logo del sitio junto con pequeña presentacion-->
-            <section class="presentacion container">
-                <img src="assets/NMI.png"alt="" class="presentacion__logo">
-                <h2 class="subtitulo">Un nuevo concepto de arte.</h2>
-                <p class="presentacion__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, expedita nostrum! Inventore accusamus libero repudiandae repellat, vitae non quae unde?</p>
-                <a href="" class="presentacion__ctn">¡Hace tu reserva!</a>  
+             <!--Logo-->
+            <section class="logo container">
+                <img src="assets/nUEVO MUSEO INTERNACIONAL.png"alt="" class="logos">
+                <h2 class="subtitulo">En el Nuevo Museo Internacional vas a encontrar:</h2>
             </section>
-            <!--Bloques de texto con imagenes al costado copletando el widht de la pagina-->
-            <section class="acerca container">
+            
+                
+            <!--imagenes en grid-->
 
+            <section class="presentacion">
+                <div class="logo__wave" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+                <div class="presentacion__grid">
+                    <article class="presentacion__item"> 
+                        <img src="assets/pexels-zaksheuskaya-1546249.jpg" alt="" class="obras__img">
+                     <div class="presentacion__hover">
+                         <h2 class="presentacion__titulo">Exposiciones</h2>
+                     </div>   
+                    </article>
+                    <article class="presentacion__item"> 
+                        <img src="assets/pexels-zaksheuskaya-1546249.jpg" alt="" class="obras__img">
+                     <div class="presentacion__hover">
+                         <h2 class="presentacion__titulo">Artistas</h2>
+                     </div>   
+                    </article>
+                    <article class="presentacion__item"> 
+                        <img src="assets/pexels-zaksheuskaya-1546249.jpg" alt="" class="obras__img">
+                     <div class="presentacion__hover">
+                         <h2 class="presentacion__titulo">Museos</h2>
+                     </div>   
+                    </article>    
+                </div>
+                
+         <div class="logo__wave1" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+         </section>
+
+    
+
+            <!--Bloques de texto con imagenes al costado copletando el widht de la pagina-->
+           
+            <section class="acerca container">
                 <div class="acerca__text">
                     <h2 class="subtitulo">¿Quienes somos?</h2>
                     <p class="acerca__parraro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, atque! Alias maiores, unde ad, minus fuga nisi tempore omnis, placeat iusto quas adipisci asperiores voluptatibus necessitatibus dolores laudantium deleniti suscipit?</p>
