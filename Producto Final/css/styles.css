@@ -1,7 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Raleway:wght@300;400;700&display=swap');
 
 :root{
-    --background: linear-gradient(120deg, #0375b47e 0%, #5f4cc790 100%);
+    --background: linear-gradient(100deg, #0316207e 0%, #5f4cc790 100%);
     --color-primary: #0375b4;
     --color-secundary: #764ba2;
     --boton-padding: 20px 40px;
@@ -99,6 +100,24 @@ body{
     transform: rotate(180deg);
 }
 
+.logo__wave {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transform: rotate(180deg);
+}
+
+.logo__wave1{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+
 .top__textos{
     width: 80%;
     margin-bottom: 50px;
@@ -116,45 +135,106 @@ body{
     overflow: hidden;
 }
 
-.top__cta{
+.top__cta {
     display: inline-block;
-    background: #fff;
     padding: var(--boton-padding);
-    color: var(--color-primary);
+    color: #fff;
+    border: 3px solid #fff;
+    font-weight: 700;
     text-decoration: none;
     border-radius: 40px;
     margin-left: 40px;
     margin-top: 40px;
+    background: linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.708) 50% );
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
 }
 
-/*Seccion 2 */
+.top__cta:hover{
+    background-position: right;
+    color: #fff;
+    font-weight: 700;
+}
 
-.presentacion{
-    padding-top: 0%;
+
+/*Seccion 2 */
+.logo{
+    padding: 0%;
     text-align: center;
 }
 
-.presentacion__logo{
-    width: 150px;
+.logos{
+    width: 400px;
     height: 150px;
     border-radius: 15px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     object-fit: cover;
 }
 
-.presentacion__txt{
-    width: 80%;
-    margin: 0 auto;
+.subtitulo__1{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    text-align: center;
 }
 
-.presentacion__ctn{
-    display: inline-block;
-    margin-top: 50px;
-    background: var(--color-primary);
-    color: #fff;
-    text-decoration: none;
-    padding: var(--boton-padding);
-    border-radius: 40px;
+
+.presentacion{
+    width: 100%;
+    height: 100%;
+    background-image: var(--background), url(https://i.pinimg.com/originals/98/bf/21/98bf211ebb1b82c878a71e086f95287f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+     background-position: center;
+}
+
+
+.presentacion__grid{
+    display: grid;
+    width: 100%;
+    padding: 50px;
+    align-items: center;
+    height: 550px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.presentacion__item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.presentacion__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.presentacion__hover{
+    position: absolute;
+    background: #2f00ff8c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.presentacion__item:hover .presentacion__hover{
+    transform: translateX(0%);
 }
 
 .acerca{
@@ -364,5 +444,6 @@ body{
 .fa-brands.footer__icon{
     line-height: 60px;
 }
+
 
 
