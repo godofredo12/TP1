@@ -1,15 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@300;400;500;600;700&family=Oswald:wght@200;300;400&family=Raleway:wght@300;400;700&display=swap');
 
 :root{
-    --background: linear-gradient(100deg, #0316207e 0%, #5f4cc790 100%);
+    --background: linear-gradient(100deg, #0000007e 0%, #5f4cc790 100%);
     --color-primary: #0375b4;
     --color-secundary: #764ba2;
     --boton-padding: 20px 40px;
 }
 
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Noto Serif Gujarati', serif;
 }
 
 
@@ -22,9 +22,11 @@ body{
 }
 
 .subtitulo{
-    color: var(--color-primary);
-    font-size: 2.5rem;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 200;
     margin-bottom: 35px;
+    font-family: 'Noto Serif Gujarati', serif; 
 }
 
 .top{
@@ -117,6 +119,23 @@ body{
     height: 100px;
 }
 
+.obras__wave{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transform: rotate(180deg);
+}
+
+.obras__wave1{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
 
 .top__textos{
     width: 80%;
@@ -180,6 +199,30 @@ body{
     text-align: center;
 }
 
+.logo__cta{
+    display: inline-block;
+    padding: var(--boton-padding);
+    color: #000;
+    font-family: 'Noto Serif Gujarati', serif ;
+    border: 1px solid #000;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 40px;
+    margin-top: 40px;
+    background: linear-gradient(to right, transparent 50%, rgb(0, 0, 0) 50% );
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+}
+
+.logo__cta:hover{
+    background-position: right;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+/*Seccion 3*/
 
 .presentacion{
     width: 100%;
@@ -188,9 +231,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-     background-position: center;
+    background-position: center;
 }
-
 
 .presentacion__grid{
     display: grid;
@@ -199,7 +241,7 @@ body{
     align-items: center;
     height: 550px;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 30px;
 }
 
 .presentacion__item{
@@ -207,6 +249,7 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    border-radius: 50px;
 }
 
 .presentacion__img{
@@ -237,6 +280,8 @@ body{
     transform: translateX(0%);
 }
 
+/*Seccion 4*/
+
 .acerca{
     min-height: 400px;
     display: grid;
@@ -245,6 +290,15 @@ body{
     justify-items: center;
     align-items: center;
 }
+
+.acerca__subtitulo{
+        color: #000;
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 35px;
+        font-family: 'Noto Serif Gujarati', serif; 
+    }
+
 
 .acerca__img{
     text-align: center;
@@ -256,6 +310,7 @@ body{
 
 .acerca__foto{
     max-width: 80%;
+    border-radius: 30px;
 }
 
 .acerca__parrafo{
@@ -266,8 +321,25 @@ body{
 
 /* Seccion 3 (Obras) */
 
+.obras__subtitulo{
+    position: absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-left: 8.2%;
+    margin-top: 160px;
+    font-family: 'Noto Serif Gujarati', serif;
+    text-decoration: underline;
+}
+
 .obras{
-    background: #d4d9f3;
+    width: 100%;
+    height: 100%;
+    background-image: var(--background), url(https://i.pinimg.com/originals/98/bf/21/98bf211ebb1b82c878a71e086f95287f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;;
 }
 
 .obras__grid{
@@ -277,6 +349,7 @@ body{
     "img1 img1 img2 img3" 
     "img1 img1 img4 img5";
     gap: 10px;
+    margin-top: 50px;
 }
 
 .obras__item{
@@ -288,6 +361,13 @@ body{
 
 .obras__img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.obras__img2{
+    width: 150%;
     height: 100%;
     object-fit: cover;
     cursor: pointer;
