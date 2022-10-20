@@ -12,7 +12,6 @@ body{
     font-family: 'Noto Serif Gujarati', serif;
 }
 
-
 .container{
     width: 90%;
     margin: 0 auto;
@@ -307,7 +306,7 @@ body{
         font-weight: 400;
         margin-bottom: 35px;
         font-family: 'Noto Serif Gujarati', serif; 
-    }
+}
 
 
 .acerca__img{

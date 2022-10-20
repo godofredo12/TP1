@@ -1,13 +1,65 @@
-body {
-    background-image: url(fondoformulario.jpg);
-    background-size: 1600px;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@300;400;500;600;700&family=Oswald:wght@200;300;400&family=Raleway:wght@300;400;700&display=swap');
+:root{
+    --background: linear-gradient(100deg, #0000007e 0%, #5f4cc790 100%);
+    --color-primary: #0375b4;
+    --color-secundary: #764ba2;
+    --boton-padding: 20px 40px;
+}
+
+.top{
+    height: 10vh;
+    background-image: var(--background), url(https://i.pinimg.com/originals/98/bf/21/98bf211ebb1b82c878a71e086f95287f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+
+.top .container{
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav__items{
+    font-family: 'Noto Serif Gujarati', serif;;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav__items--cta{
+    background: rgba(0, 0, 0, 0.503);
+    border: 1px solid #ffffff;
+    border-radius: 30px;
     
 }
 
-
 .encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .formulario {
@@ -16,17 +68,20 @@ body {
     gap: 10px;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
+    align-content: center;
 }
 
 .formulario__label {
-    display: block;
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
 }
 
 .formulario__grupo-input {
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .formulario__input {
@@ -39,6 +94,9 @@ body {
     padding: 0 10px 0 10px;
     transition: 0.3s ease all;
 }
+.formulario__input::placeholder {
+    text-align: center;
+}
 
 .formulario__input:focus {
     border: 3px solid lightseagreen;
@@ -47,8 +105,10 @@ body {
 }
 
 .formulario__input-error {
+    text-align: center;
     font-size: 12px;
     margin-bottom: 0;
+    padding-top: 10px;
     display: none;
 }
 
@@ -58,16 +118,15 @@ body {
 }
 
 .formulario__validacion-estado {
-    position: absolute;
-    right: 10px;
-    bottom: 15px;
+    position: relative;
+    top: 15px;
+    right: 30px;
     z-index: 100;
     font-size: 16px;
     opacity: 0;
 }
 
 .formulario__checkbox {
-
     margin-right: 10px;
 }
 
@@ -79,21 +138,22 @@ body {
 
 .formulario__mensaje {
     height: 45px;
+    width: 50%;
     line-height: 45px;
     background-color: darksalmon;
     padding: 0 15px;
     border-radius: 3px;
     display: none;
+    justify-self: center;
 }
 
 .formulario__mensaje-activo {
-
     display: block;
 }
 
 .formulario__mensaje p {
     margin: 0;
-
+    text-align: center;
 }
 
 .formulario__grupo-btn-enviar {

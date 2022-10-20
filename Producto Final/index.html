@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +7,22 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/slider.css">
-    <title>Pagina principal</title>
+    <link rel="shortcut icon" href="assets/nmi.png">
+    <title>Nuevo Museo Internacional</title>
 </head>
 <body>
 
-
-   
     <header class="top">
     <!--Contenedor para el menu de navegacion-->
         <div class="container">
             <nav class="nav">
-                <a href="formulario.html" class="nav__items nav__items--cta">Exposiciones</a> 
+                <a href="" class="nav__items nav__items--cta">Exposiciones</a> 
                 <a href="" class="nav__items nav__items--cta">Artistas</a>
                 <a href="" class="nav__items nav__items--cta">Museos</a>
             </nav>
-    <!--Contendor para el texto-->       
+            <!--Contendor para el texto-->       
             <section class="top__container">
-               <div class="top__textos slide__textos">
+                <div class="top__textos slide__textos">
                     <div class="top__titulos">
                         <ul class="ul-titulos">
                             <li class="li-titulos">Nuevo Museo Internacional</li>
@@ -38,232 +37,190 @@
                             <li class="li-subtitulos">Das exklusivste Museum der Welt.</li>
                         </ul>
                     </div>
-                    <a href="/formulario.html" class="top__cta">¡Suscribite!</a>
-               </div>
+                    <a href="./pages/formulario.html" class="top__cta">¡Suscribite!</a>
+                </div>
             </section>
         </div>
-          <!--wave para estetizar el scroll del banner principal-->
+        <!--wave para estetizar el scroll del banner principal-->
         <div class="top__wave" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
     </header>
     
-   
+    <!--Zona principal de la pagina-->
+    <main>
+        <!--Logo-->
+        <section class="logo container">
+            <img src="assets/nuevoMuseoInternacional.png"alt="" class="Nuevo Museo Internacional">
+            <h2 class="subtitulo">LAS OBRAS IMPORTANTES DE LA ÉPOCA SIN MOVERTE DE TU CASA</h2>
+            <a href="" class="logo__cta">¡Ver más!</a>
+        </section>
+        
+        <!--imagenes en grid-->
+        <section class="presentacion" id="presentacion">
+            <div class="logo__wave" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+            <div class="presentacion__grid">
+                <article class="presentacion__item"> 
+                    <img src="assets/pexels-¶project-atlas-1674049.jpg" alt="" class="presentacion__img">
+                    <div class="presentacion__hover">
+                        <h2 class="presentacion__titulo">Exposiciones</h2>
+                    </div>   
+                </article>
+                <article class="presentacion__item"> 
+                    <img src="assets/pexels-phong-thanh-11951240.jpg" alt="" class="presentacion__img2">
+                    <div class="presentacion__hover">
+                        <h2 class="presentacion__titulo">Artistas</h2>
+                    </div>   
+                </article>
+                <article class="presentacion__item"> 
+                    <img src="assets/pexels-neslihan-baran-sami-6235523.jpg" alt="" class="presentacion__img">
+                    <div class="presentacion__hover">
+                        <h2 class="presentacion__titulo">Museos</h2>
+                    </div>   
+                </article>    
+            </div>    
+            <div class="logo__wave1" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+        </section>
 
+        <!--Bloques de texto con imagenes al costado copletando el widht de la pagina-->
+        <section class="acerca container">
+            <div class="acerca__text">
+                <h2 class="acerca__subtitulo">¿QUIENES SOMOS?</h2>
+                <p class="acerca__parraro"> Participantes y fundadores de la Organizacion Mundial de Aristas Integrados (OMAI) es un organismo cultural no gubernamental, sin ánimo de lucro, de carácter internacional, formado por todo tipo de creadores (pintores, fotógrafos, cineastas, escultores, músicos, bailarines, escritores, poetas entre otros), enfocados en la promoción cultural y la unión de los países en torno a temas de arte y paz.</p>
+                <br>
+                <p class="acerca__parraro"> Ademas contamos con el apoyo de los museos mas importantes como el Museo Britanico, el Museo Vicent Van Gogh de Amsterdam, Museo del Louvre, Museo Metropolitano de New York, entre otros.  </p>
+            </div>
 
+            <!--imagen de la derecha-->
+            <figure class="acerca__img">
+                <img src="assets/pexels-fauxels-3184394.jpg" alt="" class="acerca__foto"> 
+            </figure>
+            <!--Imagen de la izquierda-->
+            <figure class="acerca__img acerca__img--left">
+                <img src="assets/pexels-buro-millennial-1438081.jpg" alt="" class="acerca__foto"> 
+            </figure>
+            <div class="acerca__text">
+                <h2 class="acerca__subtitulo">¿DONDE ESTAMOS?</h2>
+                <p class="acerca__parraro">El Nuevo Museo Internacional es el primer museo sin una sede física, es decir, estamos en cualquier lugar que tenga acceso a un dispositivo con internet.</p>
+                <br>
+                <p class="acerca__parraro">Vas a poder elegir entre los museos mas importantes, las mejores obras y las exposiciones mas célebres cuando y donde quieras.</p>
+            </div>        
+        </section>
 
-<!--Zona principal de la pagina-->
-        <main>
-             <!--Logo-->
-            <section class="logo container">
-                <img src="assets/nUEVO MUSEO INTERNACIONAL.png"alt="" class="logos">
-                <h2 class="subtitulo">LAS OBRAS IMPORTANTES DE LA ÉPOCA SIN MOVERTE DE TU CASA</h2>
-                <a href="" class="logo__cta">¡Ver más!</a>
-            </section>
-            
-                
-            <!--imagenes en grid-->
-
-            <section class="presentacion" id="presentacion">
-                <div class="logo__wave" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
-                <div class="presentacion__grid">
-                    <article class="presentacion__item"> 
-                        <img src="assets/pexels-¶project-atlas-1674049.jpg" alt="" class="presentacion__img">
-                     <div class="presentacion__hover">
-                         <h2 class="presentacion__titulo">Exposiciones</h2>
-                     </div>   
-                    </article>
-                    <article class="presentacion__item"> 
-                        <img src="assets/pexels-phong-thanh-11951240.jpg" alt="" class="presentacion__img2">
-                     <div class="presentacion__hover">
-                         <h2 class="presentacion__titulo">Artistas</h2>
-                     </div>   
-                    </article>
-                    <article class="presentacion__item"> 
-                        <img src="assets/pexels-neslihan-baran-sami-6235523.jpg" alt="" class="presentacion__img">
-                     <div class="presentacion__hover">
-                         <h2 class="presentacion__titulo">Museos</h2>
-                     </div>   
-                    </article>    
-                </div>
-                
-         <div class="logo__wave1" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
-         </section>
-
-    
-
-            <!--Bloques de texto con imagenes al costado copletando el widht de la pagina-->
-           
-            <section class="acerca container">
-                <div class="acerca__text">
-                    <h2 class="acerca__subtitulo">¿QUIENES SOMOS?</h2>
-                    <p class="acerca__parraro"> Participantes y fundadores de la Organizacion Mundial de Aristas Integrados (OMAI) es un organismo cultural no gubernamental, sin ánimo de lucro, de carácter internacional, formado por todo tipo de creadores (pintores, fotógrafos, cineastas, escultores, músicos, bailarines, escritores, poetas entre otros), enfocados en la promoción cultural y la unión de los países en torno a temas de arte y paz.</p>
-                    <br>
-                    <p class="acerca__parraro"> Ademas contamos con el apoyo de los museos mas importantes como el Museo Britanico, el Museo Vicent Van Gogh de Amsterdam, Museo del Louvre, Museo Metropolitano de New York, entre otros.  </p>
-                </div>
-
-                <!--imagen de la derecha-->
-                <figure class="acerca__img">
-                    <img src="assets/pexels-fauxels-3184394.jpg" alt="" class="acerca__foto"> 
-                </figure>
-                <!--Imagen de la izquierda-->
-                <figure class="acerca__img acerca__img--left">
-                    <img src="assets/pexels-buro-millennial-1438081.jpg" alt="" class="acerca__foto"> 
-                </figure>
-
-                <div class="acerca__text">
-                    <h2 class="acerca__subtitulo">¿DONDE ESTAMOS?</h2>
-                    <p class="acerca__parraro">El Nuevo Museo Internacional es el primer museo sin una sede física, es decir, estamos en cualquier lugar que tenga acceso a un dispositivo con internet.</p>
-                    <br>
-                    <p class="acerca__parraro">Vas a poder elegir entre los museos mas importantes, las mejores obras y las exposiciones mas célebres cuando y donde quieras.</p>
-                </div>
-            
-            </section>
-
-           
-
-           
-         
-<!--Nueva seccion con obras mas destacadas-->
-
-            
-            <section class="obras"> 
-                <h2 class="obras__subtitulo">EN EL NUEVO MUSEO INTERNACIONAL VAS A PODER ENCONTRAR:</h2>
-                <div class="obras__wave" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
-                <div class="container">
-                    <div class="obras__grid"> 
-                        <!--Cuadricula en grid-->
-                        <!--foto1-->
-                        <article class="obras__item"> 
-                            <img src="assets/kisspng-vincent-van-gogh-van-gogh-self-portrait-national-g-portrait-painting-cliparts-5aa252522e9985.9316105415205873461909.png" alt="" class="obras__img">
-                         <div class="obras__hover">
+        <!--Nueva seccion con obras mas destacadas-->
+        <section class="obras"> 
+            <h2 class="obras__subtitulo">EN EL NUEVO MUSEO INTERNACIONAL VAS A PODER ENCONTRAR:</h2>
+            <div class="obras__wave" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+            <div class="container">
+                <div class="obras__grid"> 
+                    <!--Cuadricula en grid-->
+                    <!--foto1-->
+                    <article class="obras__item"> 
+                        <img src="assets/kisspng-vincent-van-gogh-van-gogh-self-portrait-national-g-portrait-painting-cliparts-5aa252522e9985.9316105415205873461909.png" alt="" class="obras__img">
+                        <div class="obras__hover">
                             <div class="obras__txt">
                                 <h2 class="obras__titulo">Expo permanente<br>Museo Van Gogh</h2>
                                 <a href="#" class="obras__link">Ir a ver!</a>
                             </div>     
-                         </div>   
-                        </article>
-                        <!--foto2-->
-                        <article class="obras__item"> 
-                            <img src="assets/pexels-mark-neal-2119642.jpg
-                            " alt="" class="obras__img">
-                         <div class="obras__hover">
+                        </div>   
+                    </article>
+                    <!--foto2-->
+                    <article class="obras__item"> 
+                        <img src="assets/pexels-mark-neal-2119642.jpg" alt="" class="obras__img">
+                        <div class="obras__hover">
                             <div class="obras__txt">
                                 <h2 class="obras__titulo">Miguel Angel Expo 360º</h2>
-                                <a href="#" class="obras__link">Ir a ver!</a>                       
-                         </div>   
-                        </article>
-                        <!--foto3-->
-                        <article class="obras__item"> 
-                            <img src="assets/art-ge6e732410_1920.jpg" alt="" class="obras__img">
-                         <div class="obras__hover">
+                                <a href="#" class="obras__link">Ir a ver!</a> 
+                            </div>                      
+                        </div>   
+                    </article>
+                    <!--foto3-->
+                    <article class="obras__item"> 
+                        <img src="assets/art-ge6e732410_1920.jpg" alt="" class="obras__img">
+                        <div class="obras__hover">
                             <div class="obras__txt">
                                 <h2 class="obras__titulo">Recorrido por Museo del Louvre</h2>
                                 <a href="#" class="obras__link">Ir a ver!</a>                      
-                         </div>   
-                        </article>
-                        <!--foto4-->
-                        <article class="obras__item"> 
-                            <img src="assets/pexels-roxanne-shewchuk-2183927.jpg" alt="" class="obras__img2">
-                         <div class="obras__hover">
+                            </div>
+                        </div>   
+                    </article>
+                    <!--foto4-->
+                    <article class="obras__item"> 
+                        <img src="assets/pexels-roxanne-shewchuk-2183927.jpg" alt="" class="obras__img2">
+                        <div class="obras__hover">
                             <div class="obras__txt">
                                 <h2 class="obras__titulo">Misterios de Egipto</h2>
-                                <a href="#" class="obras__link">Ir a ver!</a>                         
-                         </div>   
-                        </article>
-                        <!--foto5-->
-                        <article class="obras__item"> 
-                            <img src="assets/joven-perla.png" alt="" class="obras__img2">
-                         <div class="obras__hover">
+                                <a href="#" class="obras__link">Ir a ver!</a>
+                            </div>                         
+                        </div>   
+                    </article>
+                    <!--foto5-->
+                    <article class="obras__item"> 
+                        <img src="assets/joven-perla.png" alt="" class="obras__img2">
+                        <div class="obras__hover">
                             <div class="obras__txt">
                                 <h2 class="obras__titulo">Lo mejor de Johannes Vermeer</h2>
                                 <a href="#" class="obras__link">Ir a ver!</a>
-                         </div>   
-                        </article>
-                        
-                    </div>   
+                            </div>
+                        </div>   
+                    </article>        
+                </div>   
+            </div>
+            <div class="obras__wave1" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+        </section>
+        <!-- Seccion de comentarios -->
+        <section class="comentarios container">
+            <h2 class="subtitulo">¿Que dicen de nosotros?</h2>
+            <div class="comentarios__grid">
+                <!--Comentario1-->
+                <article class="comentarios__item">
+                <div class="comentarios__persona">
+                    <img src="assets/Hombre.jpeg" alt="" class="comentarios__img">
+                    <div class="comentarios__txt">
+                        <h3 class="comentarios__nombre">Juan Pérez</h3>
+                        <p class="comentarios__pais">Málaga, España</p>
+                    </div>
                 </div>
-                <div class="obras__wave1" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
-            </section>
-            <!-- Seccion de comentarios -->
-            <section class="comentarios container">
-                <h2 class="subtitulo">¿Que dicen de nosotros?</h2>
-
-                <div class="comentarios__grid">
-                    <!--Comentario1-->
-                    <article class="comentarios__item">
+                <p class="comentarios__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis, ad ab id facilis ut minus vel. In, esse. Enim!</p>
+                </article>
+                <!--Comentario2-->
+                <article class="comentarios__item">
                     <div class="comentarios__persona">
                         <img src="assets/Hombre.jpeg" alt="" class="comentarios__img">
                         <div class="comentarios__txt">
                             <h3 class="comentarios__nombre">Juan Pérez</h3>
                             <p class="comentarios__pais">Málaga, España</p>
-
                         </div>
                     </div>
-
                     <p class="comentarios__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis, ad ab id facilis ut minus vel. In, esse. Enim!</p>
-                    </article>
-                    <!--Comentario2-->
-                    <article class="comentarios__item">
-                        <div class="comentarios__persona">
-                            <img src="assets/Hombre.jpeg" alt="" class="comentarios__img">
-                            <div class="comentarios__txt">
-                                <h3 class="comentarios__nombre">Juan Pérez</h3>
-                                <p class="comentarios__pais">Málaga, España</p>
-    
-                            </div>
-                        </div>
-    
-                        <p class="comentarios__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis, ad ab id facilis ut minus vel. In, esse. Enim!</p>
-                        </article>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wave" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+        <div class="container footer__grid">
+            <nav class="nav nav__footer">
+                <a class="nav__items nav__items--footer" href="">Inicio</a> 
+                <a class="nav__items nav__items--footer" href="">Sobre nosotros</a> 
+                <a class="nav__items nav__items--footer" href="">Donde estamos</a> 
+                <a class="nav__items nav__items--footer" href="">Obras</a> 
+            </nav>
+            <section class="footer__contacto">
+                <h3 class="footer__titulo">NUESTRAS REDES</h3>
+                <div class="footer__icons">
+                    <span class="footer__container-icons">
+                        <a class="fa-brands fa-facebook footer__icon" href="#"></a>
+                    </span>
+                    <span class="footer__container-icons">
+                        <a class="fa-brands fa-twitter footer__icon" href=""></a>  
+                    </span>
+                    <span class="footer__container-icons">
+                        <a class="fa-brands fa-whatsapp footer__icon" href="#"></a>
+                    </span>                
                 </div>
             </section>
-
-
-           
-        </main>
-
-       
-
-        <footer class="footer">
-            <div class="footer__wave" style= "overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
-            <div class="container footer__grid">
-                <nav class="nav nav__footer">
-                   <a class="nav__items nav__items--footer" href="">Inicio</a> 
-                   <a class="nav__items nav__items--footer" href="">Sobre nosotros</a> 
-                   <a class="nav__items nav__items--footer" href="">Donde estamos</a> 
-                   <a class="nav__items nav__items--footer" href="">Obras</a> 
-                </nav>
-
-                <section class="footer__contacto">
-                    <h3 class="footer__titulo">NUESTRAS REDES</h3>
-                    <div class="footer__icons">
-                        <span class="footer__container-icons">
-                            <a class="fa-brands fa-facebook footer__icon" href="#"></a>
-                        </span>
-                        <span class="footer__container-icons">
-                            <a class="fa-brands fa-twitter footer__icon" href=""></a>  
-                        </span>
-                        <span class="footer__container-icons">
-                            <a class="fa-brands fa-whatsapp footer__icon" href="#"></a>
-                        </span>
-                        
-                    </div>
-                </section>
-            </div>
-        </footer>
-
-    
-   
-   
-    
-
-
-    <script src="https://kit.fontawesome.com/ac5a02070b.js" crossorigin="anonymous"></script>
-</body>
-</html>
-   
-   
-    
-
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/ac5a02070b.js" crossorigin="anonymous"></script>
 </body>

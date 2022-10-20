@@ -5,33 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de consultas</title>
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/estilosformulario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/nmi.png">
 </head>
 <body>
-
     <!--Falta en formulario: 
     - Mensaje de error cuando no se aceptan TyC (Sale que esta incompleto, deberia tener uno que diga que falta eso en especifico)
     - En confirmar contraseña aparece una X en lugar del tilde
-    - Darle el mismo estilo al nav que en el index
-    - Darle estilo al mensaje 
     - Si cometes un error y luego completas el formulario, el mensaje de error no se reincia, sigue quedando en pantalla
     - Opcional: Cuando da el mensaje de error porque falta algun campo indicar cual falta (si sobra tiempo ja) -->
-    
-    <nav class="nav">
-        <a href="./paginas/formulario.html" class="nav__items nav__items--cta">Contactanos</a>
-        <a href="" class="nav__items nav__items--cta">Artistas</a>
-        <a href="" class="nav__items nav__items--cta">Museos</a>
-        <a href="../index.html" class="nav__items nav__items--cta">Inicio</a>
-    </nav>
+    <header class="top">
+            <div class="container">
+                <nav class="nav">
+                    <a href="../index.html" class="nav__items nav__items--cta">Inicio</a>
+                    <a href="" class="nav__items nav__items--cta">Exposiciones</a>
+                    <a href="" class="nav__items nav__items--cta">Artistas</a>
+                    <a href="" class="nav__items nav__items--cta">Museos</a>
+                </nav>
+            </div>
+    </header>
     <div class="encabezado">
-        <br>
-        <br>
         <h2> Completa tus datos y mantente al tanto de nuestras novedades</h2>
-        <br>
-        <br>
     </div>
     <form action="" class="formulario" id="formulario">
         <!-- Grupo usuario -->
@@ -78,7 +76,7 @@
         <div class="formulario__grupo" id="grupo__correo">
             <label for="correo" class="formulario__label">Correo electrónico</label>
             <div class="formulario__grupo-input">
-                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@dominio.com">
                 <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
             </div>
             <p class="formulario__input-error">Por favor, ingrese un correo válido.</p>
@@ -88,7 +86,7 @@
         <div class="formulario__grupo" id="grupo__correo">
             <label for="correo2" class="formulario__label">Repetir correo electrónico</label>
             <div class="formulario__grupo-input">
-                <input type="email" class="formulario__input" name="correo" id="correo2" placeholder="correo@correo.com">
+                <input type="email" class="formulario__input" name="correo" id="correo2" placeholder="correo@dominio.com">
                 <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
             </div>
             <p class="formulario__input-error">Por favor, ingrese un correo válido.</p>
